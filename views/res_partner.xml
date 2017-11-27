@@ -1,0 +1,14 @@
+<odoo>
+    <data>
+        <record id="res_partner_team_sales_form" model="ir.ui.view">
+            <field name="name">res.partner.team.sales.form</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <field name="user_id" position="before">
+                    <field name="team_sales_id"/>
+                </field>
+            </field>
+        </record>
+    </data>
+</odoo>
